@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+   <style>
+body, html {
+    margin: 0;
+    padding: 0;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   background-color: #F1E5D1
+    
+}
+header {
+    background-color: #2C3E50;  
+    padding: 20px;
+    
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    border-radius: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.home {
+    background: url("consulting.avif") no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+   
+}
+
+.overlay {
+    background-color: rgba(44, 62, 80, 0.7);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    border-radius: 50px;
+   
+}
+#unique_button{
+    background-image:url(21.png);
+    border: solid white;
+    
+}
+.blog {
+    background-color: #F1E5D1;
+    padding: 60px;
+    
+}
+.grid-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;  
+}
+
+.grid-item {
+    flex: 1 1 30%;
+    margin: 10px;
+   
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.page {
+    background-color: #F1E5D1;
+
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+h1{
+    text-align: center;
+    font-size:xx-large;
+}
+
+.text {
+    flex: 1 1 45%;
+    margin: 10px;
+}
+.image {
+    flex: 1 1 45%;
+    margin: 10px;
+    
+}
+.image img {
+    width: 50%;
+    height: auto;
+    border-radius: 100px;
+}
+.services {
+    background-color: #F1E5D1;
+    padding: 50px;
+      
+}
+button{
+    width: 200px;
+    height: 32px;
+    background-color: rgb(181 198 215 / 70%);;
+    border-radius: 50px;    
+}
+
+footer {
+    background-color: #2C3E50;
+    color: white;
+   
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    
+}
+
+.footer-item img {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 21px;
+}
+</style>
+
+</head>
+  
+<body>
+    <header>
+        <div class="header-container">
+            <img src="cp logo.png" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#page">Page</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="section home">
+        <div class="overlay">
+            <button class="button home" id="unique_button"></button>
+            <h1 style="font-size:x-large;">Welcome to Tech Innovators Inc., where 
+                technology drives success.
+            </h1>
+        </div>
+        <h1>Explore our World</h1>
+    </section>
+
+    
+<hr color="black" width="95%" style="margin-top: 70px;"> 
+
+    <section id="blog" class="section blog">
+        <h1 style="font-size:325%;">Blogs</h1>
+        <div class="grid-container">
+            <div class="grid-item"><img src="blog1 (1).png" alt="Blog 1"></div>
+            <div class="grid-item"><img src="blog1 (2).png" alt="Blog 2"></div>
+            <div class="grid-item"><img src="blog1 (3).png" alt="Blog 3"></div>
+        </div>
+        <div class="grid-container">
+            <h1>Blog 1</h1>
+            <h1>Blog 2</h1>
+            <h1>Blog 3</h1>
+        </div>
+        <div class="grid-container">
+            <p style="margin-left: 100px; font-size: x-large;">Teach to student</p>
+            <p style="margin-left: 100px; font-size: x-large;">Village areas</p>
+            <p style="margin-left: 100px; font-size: x-large;">Use of social media</p>
+        </div>
+    </section>
+
+<hr color="black" width="95%" style="margin-top: 70px;">  
+
+    <section id="page" class="section page">
+        <div class="content-container">
+            <div class="text">
+                <h1 style="font-size:325%;">About us</h1>
+                <p style="margin-left: 100px; font-size: x-large;">At Tech Innovators Inc., we specialize in delivering cutting-edge IT
+                     solutions tailored to meet the unique needs of businesses. Our team 
+                     of experts is dedicated to providing top-tier services in software
+                      development, cybersecurity, and cloud computing. We are committed 
+                      to driving innovation and enhancing productivity for our clients.
+                       With a customer-centric approach, we ensure seamless integration
+                        and exceptional support. Partner with us to elevate your business
+                         to new heights with technology that works for you.
+                </p>
+            </div>
+            <div class="image">
+                <img src="man-white.jpg" alt="Page Image">
+            </div>
+        </div>
+    </section>
+<hr color="black" width="95%"> 
+    <section id="services" class="section services">
+        <h1 style="font-size:325%;">Services</h1>
+        <div class="grid-container">
+            <div class="grid-item"><img src="images (2).jpeg" alt="Service 1"></div>
+            <div class="grid-item"><img src="images (3).jpeg" alt="Service 2"></div>
+            <div class="grid-item"><img src="images (4).jpeg" alt="Service 3"></div>
+        </div>
+        <div class="grid-container">
+            <p style="width: 80%; text-align: center;font-size: large;">We create innovative, 
+                user-friendly mobile and web applications tailored 
+                to your business needs, ensuring seamless functionality and exceptional
+                 user experiences across all platforms. Our team also crafts visually 
+                 stunning, highly functional websites designed to elevate your online 
+                 presence with responsive design and optimal performance. For any
+                  IT-related inquiries or issues, our dedicated support team is here 
+                  to assist you. Visit our Help and FAQ section for quick solutions,
+                   or contact us for personalized assistance.
+                   FOR MORE INFORMATION CLICK BELLOW BUTTONS.
+            </p>
+            
+        </div>
+        <div class="grid-container">
+            <button>READ MORE</button>
+            <button>READ MORE</button>
+            <button>READ MORE</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-item">
+                <img src="whatsapp-logo-7.png" alt="Footer Image 1">
+                <p>
+                    +91 8780665657
+                </p>
+            </div>
+            <div class="footer-item">
+                <img src="linkedIn_PNG8.png" alt="Footer Image 2">
+                <p>
+                    Patel Chintankumar
+                </p>
+            </div>
+            <div class="footer-item">
+                <img src="th.jpeg" alt="Footer Image 3">
+                <p>
+                    _chintan_patel_1
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
